@@ -22,7 +22,7 @@ Checkpoint: Type in the following command to ensure you have correctly installed
 node -v && npm -v
 ```
 
-### Part 1: Create database (if not already exists)
+### Create database (if not already exists)
 #### Prerequisite
 1. MySQL is installed and running
 2. DataGrip (by Jetbrains) is installed
@@ -55,7 +55,37 @@ product_price DOUBLE
 );
 ``` 
 
-### Part 2: Cloning server and installing backend dependencies - Express, MySQL2, and Cors 
+#### Start the Web App
+1. Clone and open the project in Visual Studio Code.
+2. Open a new terminal (bash or git bash) and make sure that you are in your project folder.
+3. Start the frontend by executing the following commands:
+```
+optional: cd PROJECTFOLDER
+cd frontend
+npm install (only if "node modules" are not installed)
+npm run serve
+```
+4. Open again a new terminal (bash or git bash) and start the backend by executing the following commands:
+```
+optional: cd PROJECTFOLDER
+cd backend
+npm install (only if "node modules" are not installed)
+node index
+```
+
+#### Open the Web App in the browser
+Visit the following URL:
+```
+http://localhost:8080/
+```
+
+If it goes well, after adding a new product it will look like the following image:
+![Vue.js Example App](https://mfikri.com/assets/images/files/en/fullstack/product-list-added.png)
+
+
+
+## To build the Web App from Scratch
+### Part 1: Implementing the server and installing backend dependencies - Express, MySQL2, and Cors 
 Step 1: Create a folder on your computer, here I give the name "fullstack-app".
 
 Step 2: Then open the folder using a code editor, here I am using Visual Studio Code.
@@ -124,7 +154,7 @@ So that the "package.json" file looks like this:
 In this way we can use the ES6 Module Syntax to export and import modules.
 
 
-### Part 3: Application Structure - MVC (Model-View-Controller)
+### Part 2: Application Structure - MVC (Model-View-Controller)
 #### Steps 
 To make the application more neatly structured, we will apply the [MVC (Model-View-Controller)](https://de.wikipedia.org/wiki/Model_View_Controller) pattern.
 
@@ -136,7 +166,7 @@ Look at the following picture for more details:
 
 ![App Structure](https://mfikri.com/assets/images/files/en/fullstack/app-strucktur.png)
 
-### Part 4: Server - Add program code for database connection
+### Part 3: Server - Add program code for database connection
 #### Steps
 
 Step 1: Connect to Database - Open the "database.js" file in the "config" folder, then add the code below and type in your root password.
@@ -368,7 +398,7 @@ At this point you have successfully created the backend.
 To make sure the backend is running well, you can use POSTMAN to do some testing.
 
 
-### Part 5: Frontend
+### Part 4: Frontend
 
 #### Prerequisite
 You need to install Vue CLI in order to build the frontend. 
@@ -726,7 +756,7 @@ export default {
 ```
 
 
-## Part 6: Testing
+## Part 5: Testing
 
 #### READ, CREATE, UPDATE, DELETE
 Back to browser and visit the following URL:

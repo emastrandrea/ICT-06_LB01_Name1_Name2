@@ -12,8 +12,9 @@ This full stack web application has been developed with the following technology
 #### Frontend
 * Vue.js (component-based user-interfaces)
 * babel (transpiler, compatibility of new ECMAScript 6 and higher to ECMAScript 5)
+* [bulma](https://bulma.io/documentation/)
 
->This step-by-step installation handles the backend!  
+> With this step-by-step installation you start the web app in your browser and can connect to the database!  
 
 #### Prerequisite
 You need to install [nodejs](https://nodejs.org/en/) in order to build the required infrastructure. With the installation of nodejs the tool `npm` (Node package manager) is included.
@@ -57,7 +58,7 @@ product_price DOUBLE
 
 #### Start the Web App
 1. Clone and open the project in Visual Studio Code.
-2. Open a new terminal (bash or git bash) and make sure that you are in your project folder.
+2. Open a new terminal [bash or git bash](https://towardsdatascience.com/setup-vue-js-hello-world-in-visual-studio-code-15d4edccd6e2) and make sure that you are in your project folder.
 3. Start the frontend by executing the following commands:
 ```
 optional: cd PROJECTFOLDER
@@ -65,7 +66,7 @@ cd frontend
 npm install (only if "node modules" are not installed)
 npm run serve
 ```
-4. Open again a new terminal (bash or git bash) and start the backend by executing the following commands:
+4. Open again a new terminal (bash or git bash) and start the backend:
 ```
 optional: cd PROJECTFOLDER
 cd backend
